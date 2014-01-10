@@ -1,7 +1,7 @@
 {
   "name": "geodna",
   "description": "A Node.js module port of http://github.com/quile/geodna-js without the Google Maps support functions",
-  "version": "0.1.0",
+  "version": “1.0.0”,
   "author": {
     "name": "Ovi Comes"
   },
