@@ -1,6 +1,6 @@
 {
   "name": "geodna",
-  "description": "A Node.js module port of http://github.com/quile/geodna-js without the Google Maps support functions",
+  "description": "geodna for node",
   "version": "1.0.0",
   "author": {
     "name": "Ovi Comes"
@@ -8,11 +8,22 @@
   "scripts": {
     "test": "mocha --reporter spec"
   },
+  "keywords": [
+    "geodna",
+    "geocode",
+    "geo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clonq/geodna"
+  },
+  "main": "index",
   "engines": {
     "node": "*"
   },
   "devDependencies": {
     "mocha": "~1.13.0",
     "chai": "~1.8.1"
-  }
+  },
+  "readme": "A Node.js module port of http://github.com/quile/geodna-js without the Google Maps support functions"
 }
