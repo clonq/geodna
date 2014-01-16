@@ -10,6 +10,8 @@ var NELSON_COORDINATES = [-41.283333, 173.283333];
 var NELSON_GEODNA = 'etcttgctagcttagt';
 var MON_COORDINATES = [7.0625, -95.677068];
 var MON_GEODNA = 'watttatcttttgctacgaagt';
+var ELIZABETH_COORDINATES = [39.34684, -104.6455];
+var ELIZABETH_GEODNA = 'watcataccaacatatccgccc';
 
 describe('encode', function(){
 	it('should return Wellington\'s corect DNA', function(){
@@ -26,6 +28,11 @@ describe('encode', function(){
 		var mon = geodna.encode( MON_COORDINATES[0], MON_COORDINATES[1] );
 		should.exist(mon);
 		mon.should.eql(MON_GEODNA);
+	});
+	it('should return Elizabeth\'s corect DNA', function(){
+		var elizabeth = geodna.encode( ELIZABETH_COORDINATES[0], ELIZABETH_COORDINATES[1] );
+		should.exist(elizabeth);
+		elizabeth.should.eql(ELIZABETH_GEODNA);
 	});
 });
 
